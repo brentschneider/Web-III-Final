@@ -1,8 +1,8 @@
 /* *************************************
 	  Web III Final
 
-Author by: Brent - brent@milkshakeinteractive
-Date: June 8th 2016
+    Author by: Brent - brent@milkshakeinteractive.com
+    Date: June 8th 2016
 
 * *************************************/
 
@@ -21,9 +21,9 @@ $(document).ready(function() {
 
 
  // Detect keyboard imput - spacebar
- $('html').keypress(function(e) {
+ $('html').keydown(function(e) {
 
-  if (e.keyCode === 32) {
+  if (e.keyCode === 0 || e.keyCode === 32) {
     // play sound
     obj.play();
     // add score to page
@@ -32,9 +32,9 @@ $(document).ready(function() {
 
     // console.log(e.keyCode + " You earned one additional Mario! " + player);
 
-   // Show ONe up mushroom then fade it out
+   // Show One up mushroom then fade it out
     $('.oneup').fadeIn(400).delay("slow").fadeOut();
-  } // end if
+  } // end if key detection
 
-}); // end keypress function 
+}); // end keypress function
 });

@@ -1,6 +1,11 @@
 body {
   background: #647cff;
   margin:0;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 header {
@@ -19,6 +24,13 @@ header {
   position: absolute;
   top: 195px;
   left: 250px;
+}
+
+p {
+  height: 180px;
+  position: absolute;
+  bottom: 0;
+  margin-left: 65px;
 }
 
 footer {
